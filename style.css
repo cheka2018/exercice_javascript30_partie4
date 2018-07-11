@@ -1,0 +1,382 @@
+html {
+      font-size: 10px;    
+    }
+
+  body,html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+  body {   
+      background: #193549;    
+      color: white;
+      font-size: 2rem;
+      min-height: 10vh;
+      align-items: center;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 20;
+        }
+
+  h2 {
+    margin-top: 0;
+    padding-top: .8em;
+  }
+
+ p , span{
+  color : black;
+  font-family: arial;
+  font-weight: 2;
+  }
+
+  nav {
+    position: relative;
+    perspective: 600px;
+  }
+   .cours {
+      margin : 50px;
+      padding: 50px;
+    }
+
+  .cool > li > a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgba(0,0,0,0.2);
+    padding:10px 20px;
+    display: inline-block;
+    margin:20px;
+    border-radius:5px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cool > li {
+    position: relative;
+    display:flex;
+    justify-content: center;
+  }
+
+  .dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding:20px;
+    top:-20px;
+    border-radius:2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+  }
+
+  .trigger-enter .dropdown {
+    display: block;
+  }
+
+  .trigger-enter-active .dropdown {
+    opacity: 1;
+  }
+
+
+
+  .dropdownBackground {
+    width:100px;
+    height:100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    transition:all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+
+  }
+
+  .dropdownBackground.open {
+    opacity: 1;
+  }
+
+  .arrow {
+    position: absolute;
+    width:20px;
+    height:20px;
+    display: block;
+    background:white;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .bio {
+    min-width:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+  }
+
+  .bio img {
+    float:left;
+    margin-right:20px;
+  }
+
+  .courses {
+    min-width:300px;
+  }
+
+  .courses li {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  .dropdown a {
+    text-decoration: none;
+    color: #ffc600;
+  }
+
+  a.button {
+    background:black;
+    display: block;
+    padding:10px;
+    color:white;
+    margin-bottom: 10px;
+  }
+
+
+  /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
+  .button[href*=twitter] { background: #019FE9; }
+  .button[href*=facebook] { background: #3B5998; }
+  .button[href*=courses] { background: #ffc600; }
+
+
+
+
+
+  /* ...............Day 27.................... */
+  .items {
+  height:600px;
+  padding: 100px;
+  width:100%;
+  border:1px solid white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255,255,255,0.1);
+  font-size: 0;
+  perspective: 500px;
+  z-index: -999
+}
+
+.items.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width:200px;
+  height: calc(100% - 40px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 100;
+  color:rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
+}
+
+.item:nth-child(9n+1) { background: dodgerblue;}
+.item:nth-child(9n+2) { background: goldenrod;}
+.item:nth-child(9n+3) { background: paleturquoise;}
+.item:nth-child(9n+4) { background: gold;}
+.item:nth-child(9n+5) { background: cadetblue;}
+.item:nth-child(9n+6) { background: tomato;}
+.item:nth-child(9n+7) { background: lightcoral;}
+.item:nth-child(9n+8) { background: darkslateblue;}
+.item:nth-child(9n+9) { background: rebeccapurple;}
+
+.item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
+.item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
+
+
+
+/*........................ Day 28 ............................*/
+.wrapper {
+  margin : auto;
+  width:850px;
+  display:flex;
+}
+video {
+  box-shadow:0 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.speed {
+  background:#efefef;
+  flex:1;
+  display:flex;
+  align-items:flex-start;
+  margin:10px;
+  border-radius:50px;
+  box-shadow:0 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.speed-bar {
+  width:100%;
+  background:linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%);
+  text-shadow:1px 1px 0 rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2px;
+  color:white;
+  height:16.3%;
+}
+
+/* ........................Day 29 : compte a rebours..................... */
+.display__time-left {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+  color:white;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.05);
+}
+
+.timer {
+  margin : 50px;
+  display:flex;
+  min-height: 100vh;
+  flex-direction:column;
+}
+
+.timer__controls {
+  display: flex;
+}
+
+.timer__controls > * {
+  flex:1;
+}
+
+.timer__controls form {
+  flex:1;
+  display:flex;
+}
+
+.timer__controls input {
+  flex:1;
+  border:0;
+  padding:2rem;
+}
+
+.timer__button {
+  background:none;
+  border:0;
+  cursor: pointer;
+  color:white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background:rgba(0,0,0,0.1);
+  border-bottom:3px solid rgba(0,0,0,0.2);
+  border-right:1px solid rgba(0,0,0,0.2);
+  padding:1rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background:rgba(0,0,0,0.2);
+  outline:0;
+}
+
+.display {
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 4rem;
+  color:white;
+}
+
+
+/*.................................. Day 30................................ */
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  line-height:1;
+  margin-bottom: 0;
+}
+
+.score {
+  background:rgba(255,255,255,0.2);
+  padding:0 3rem;
+  line-height:1;
+  border-radius:1rem;
+}
+
+.game {
+  width:600px;
+  height:400px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(dirt.svg) bottom center no-repeat;
+  background-size:contain;
+  content:'';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom:-30px;
+}
+
+.mole {
+  background:url('mole.svg') bottom center no-repeat;
+  background-size:60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .mole {
+  top:0;
+}
+
+
+
+
+
+
+
+
+
+
+

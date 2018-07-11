@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Partie 4 javascript30</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- ......................Day 26 fond blanc qui suis la souris sru la navbar ..................-->
+<div class="cours">
+    <h2>Pointez la souris sur les liens </h2>
+	  <nav class="top">
+	    <div class="dropdownBackground">
+	      <span class="arrow"></span>
+	    </div>
+	    <ul class="cool">
+	      <li>
+	        <a href="#">A propos</a>
+	        <div class="dropdown dropdown1">
+	          <div class="bio">
+	            <img src="https://image.freepik.com/icones-gratuites/l-39-homme-avec-les-cheveux-courts-profil-avatar_318-68872.jpg">
+	            <p>Hey, je suis développeur web, je cherche des nouveaux challenges dans le dévellopement web, j'ai des connaissances en HTML5, CSS3 javascript ... </p>
+	          </div>
+	        </div>
+	      </li>
+	      <li>
+	        <a href="#">Langages</a>
+	        <ul class="dropdown courses">
+	          <li>
+	            <span class="code">	HTML</span>
+	            <a href="https://ReactForBeginners.com">des nouvelles connaissances</a>
+	          </li>
+	          <li>
+	            <span class="code">	CSS</span>
+	            <a href="https://ES6.io">Dernière version CSS5</a>
+	          </li>
+	          <li>
+	            <span class="code">Javascript</span>
+	            <a href="https://LearnNode.com">langage extraordinaire je trouve</a>
+	          </li>
+	          <li>
+	            <span class="code">Bootstrap</span>
+	            <a href="https://SublimeTextBook.com">Pour vous aider </a>
+	          </li>
+	          <li>
+	            <span class="code">Photoshop</span>
+	            <a href="http://Flexbox.io">maginfique logiciels de retouches d'images</a>
+	          </li>
+	          <li>
+	            <span class="code">Ilustrator</span>
+	            <a href="https://CSSGrid.io">pour les icones, et les illustattions </a>
+	          </li>
+	          <li>
+	            <span class="code">Adobe premier</span>
+	            <a href="http://LearnRedux.com">outils trés apprécié par ls monteur vidéo</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li>
+	        <a href="#">Autres Liens</a>
+	        <ul class="dropdown dropdown3">
+	          <li><a class="button" href="http://twitter.com/wesbos">Twitter</a></li>
+	          <li><a class="button" href="http://facebook.com/wesbos.developer">Facebook</a></li>
+	          <li><a class ="button" href="http://wesbos.com">Blog</a></li>
+	          <li><a class="button" href="http://wesbos.com/courses">Course Catalog</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </nav>
+</div>
+
+
+<!-- ....................................Day 27 Effet déplacement ...................-->
+<div class="cours">
+ <h2> Déplacer les slides verticalement avec la souris </h2>
+  <div class="items"> 	
+    <div class="item item1">01</div>
+    <div class="item item2">02</div>
+    <div class="item item3">03</div>
+    <div class="item item4">04</div>
+    <div class="item item5">05</div>
+    <div class="item item6">06</div>
+    <div class="item item7">07</div>
+    <div class="item item8">08</div>
+    <div class="item item9">09</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+    <div class="item item13">13</div>
+    <div class="item item14">14</div>
+    <div class="item item15">15</div>
+    <div class="item item16">16</div>
+    <div class="item item17">17</div>
+    <div class="item item18">18</div>
+    <div class="item item19">19</div>
+    <div class="item item20">20</div>
+    <div class="item item21">21</div>
+    <div class="item item22">22</div>
+    <div class="item item23">23</div>
+    <div class="item item24">24</div>
+    <div class="item item25">25</div>
+  </div>
+</div>
+
+<!-- ..........................Day 28 : video speed control .........................-->
+<div class="cours">
+ <h2> Controlez la vitesse de la vidéo </h2>
+   <div class="wrapper">
+    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+    <div class="speed">
+      <div class="speed-bar">1×</div>
+    </div>
+  </div>
+</div>
+
+<!-- .............................Day 29 : compte a rebours............................... -->
+<div class="cours">
+ <div class="timer">
+   <h2>Saissisez le minutes </h2>
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button">20 Secs</button>
+      <button data-time="300" class="timer__button">Work 5</button>
+      <button data-time="900" class="timer__button">Quick 15</button>
+      <button data-time="1200" class="timer__button">Snack 20</button>
+      <button data-time="3600" class="timer__button">Lunch Break</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Entrer les Minutes">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ................................Day 30 : jeu ............................................-->
+<div class="cours">
+	<h2>Jouez avec les taupes</h2>
+ <h1>Whack-a-mole! <span class="score">0</span></h1> 
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+  <button class="btn btn-primary" onClick="startGame()">Start!</button>
+ </div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
